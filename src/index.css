@@ -1,1 +1,78 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@theme {
+  /* Color variables */
+  --color-primary-50: #f5f5ff;
+  --color-primary-100: #ebebff;
+  --color-primary-200: #d6d8fe;
+  --color-primary-300: #b0b2fc;
+  --color-primary-400: #8a8cf9;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #5254d0;
+  --color-primary-700: #4345b0;
+  --color-primary-800: #33348d;
+  --color-primary-900: #262769;
+
+  --color-secondary-50: #f0fdf4;
+  --color-secondary-100: #dcfce7;
+  --color-secondary-200: #bbf7d0;
+  --color-secondary-300: #86efac;
+  --color-secondary-400: #4ade80;
+  --color-secondary-500: #22c55e;
+  --color-secondary-600: #16a34a;
+  --color-secondary-700: #15803d;
+  --color-secondary-800: #166534;
+  --color-secondary-900: #14532d;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-background: #f3f4f6;
+  --color-background-card: #ffffff;
+  --color-background-menu: #ffffff;
+
+  --color-text: #374151;
+  --color-text-light: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-text-white: #ffffff;
+
+  --color-border: #e5e7eb;
+  --color-border-light: #f3f4f6;
+}
+/* In your index.css or globals.css file */
+@layer utilities {
+  .bg-radial-bottom {
+    background: radial-gradient(
+      circle at bottom center,
+      var(--color-secondary-300) 0%,
+      var(--color-secondary-50) 50%
+    );
+  }
+
+  /* Add more variations if needed */
+  .bg-radial-bottom-primary {
+    background: radial-gradient(
+      circle at bottom center,
+      var(--color-primary-300) 0%,
+      var(--color-primary-900) 80%
+    );
+  }
+
+  .bg-radial-bottom-secondary {
+    background: radial-gradient(
+      circle at bottom center,
+      var(--color-secondary-300) 0%,
+      var(--color-secondary-900) 80%
+    );
+  }
+}
